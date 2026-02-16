@@ -1,39 +1,61 @@
+// lib/main.dart
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';  // تغيير هذا السطر
 
-import 'app/routes/app_router.dart';
-import 'app/routes/app_routes.dart';
-import 'app/theme/app_theme.dart';
-import 'app/di/service_locator.dart';
-import 'features/auth/presentation/providers/auth_provider.dart';
+import 'package:smarttoil/di/injection.dart';
+import 'package:smarttoil/src/presentation/pages/auth/auth_page.dart';
+import 'package:smarttoil/src/presentation/pages/home/home_page.dart';
+import 'package:smarttoil/src/presentation/pages/orders/order_detail_page.dart';
+import 'package:smarttoil/src/presentation/pages/orders/orders_page.dart';
+import 'package:smarttoil/src/presentation/pages/profile/profile_page.dart';
+import 'package:smarttoil/src/presentation/pages/rfq/rfq_detailpage.dart';
+import 'package:smarttoil/src/presentation/pages/rfq/rfqs_page.dart';
+import 'package:smarttoil/src/presentation/pages/splash/splash_screen.dart';
+import 'package:smarttoil/src/presentation/pages/products/products_detail_page.dart';
+import 'package:smarttoil/src/presentation/pages/products/products_page.dart';
 
-void main() async {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Initialize DI, Hive, etc.
-  await setupLocator();
+  // تهيئة الـ DI (GetIt)
+  await initDependencies();
 
-  runApp(const SmarttoilApp());
+  runApp(
+    const ProviderScope(
+      child: SmarttoilApp(),
+    ),
+  );
 }
 
 class SmarttoilApp extends StatelessWidget {
-  const SmarttoilApp({super.key});
+  const SmarttoilApp({super.key});  // تحديث إلى super.key
 
   @override
   Widget build(BuildContext context) {
-    return MultiProvider(
-      providers: [
-        ChangeNotifierProvider(
-          create: (_) => AuthProvider(locator()),
-        ),
-      ],
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Smarttoil B2B',
-        theme: AppTheme.lightTheme,
-        initialRoute: AppRoutes.splash,
-        onGenerateRoute: AppRouter.generateRoute,
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Smarttoil',
+      theme: ThemeData(
+        primarySwatch: Colors.blueGrey,
+        scaffoldBackgroundColor: const Color(0xFFF7F9FC),
       ),
+
+       routes: {
+        '/AuthPage': (context) => const AuthPage(),
+        '/HomePage': (context) => const HomePage(),
+        '/OrdersPage': (context) => const OrdersPage(),
+        '/ProductDetailPage': (context) => const ProductDetailPage(product: {},),
+        '/ProductsPage': (context) => const ProductsPage(),
+        '/ProfilePage': (context) => const ProfilePage(),        
+        '/OrderDetailPage': (context) => const OrderDetailPage(order: {},),
+        '/RFQsPage': (context) => const RFQsPage(),
+        '/RFQDetailPage': (context) => const RFQDetailPage(rfq: {},),
+       
+         
+        // ... باقي المسارات
+      },
+      home: const SlideshowSplash(),
     );
   }
 }
+

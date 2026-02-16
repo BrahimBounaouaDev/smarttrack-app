@@ -1,0 +1,60 @@
+# ✅ **RFQ‑2004 — PDF Description (English)**  
+**Suggested filename:** `rfq-2004-spec.pdf`
+
+### **Title**
+RFQ‑2004 – Internal Procurement Specification
+
+### **Header**
+- SMART TRACK – Oilfield & Drilling Rig Equipment  
+- RFQ ID: RFQ‑2004  
+- Date: 05 Jan 2026  
+- Company: SmartToil Trading  
+- Logo included
+
+---
+
+### **1. Summary**
+Internal procurement request for **Mud Chemicals & Additives (Product p8)**.  
+Purpose: upcoming operational campaign.  
+Delivery required before **20 Feb 2026**.
+
+---
+
+### **2. Items Table**
+| Item | Product ID | Description | Qty | Unit | Unit Price | Total |
+|------|------------|-------------|------|------|------------|--------|
+| 1 | p8 | Mud Chemicals – viscosifier, 200L drum packaging | 40 | drum | 320.00 | 12,800.00 |
+
+---
+
+### **3. Technical Requirements**
+- Chemical must meet drilling fluid standards  
+- Safety Data Sheet (SDS) required  
+- Drum labeling must include batch number and hazard symbols  
+
+---
+
+### **4. Packaging & Handling**
+- 200L sealed drums  
+- Palletized for forklift handling  
+- Hazard labels required  
+
+---
+
+### **5. Vendor Response**
+Sigma Chemicals offered:  
+- **Price:** 12,800 USD  
+- **Lead time:** 7 days  
+- **Comment:** Ready stock  
+
+---
+
+### **6. Notes**
+Internal procurement for operational use.
+
+---
+
+### **Footer**
+Mock document — SmartToil Trading
+
+---

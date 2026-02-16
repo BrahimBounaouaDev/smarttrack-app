@@ -1,0 +1,61 @@
+[
+  {
+    "id": "ORD-1001",
+    "customer": "Al-Faraj Oil",
+    "customerId": "U-902",
+    "status": "confirmed",
+    "total": 250000.00,
+    "currency": "USD",
+    "items": [
+      {"productId": "p1", "qty": 2, "unitPrice": 125000.00},
+      {"productId": "p10", "qty": 1, "unitPrice": 1200.00}
+    ],
+    "shipping": {"method": "FOB", "port": "Sohar", "eta": "2026-04-10"},
+    "date": "2026-02-01T09:30:00Z",
+    "notes": "Urgent shipment; include spare seals."
+  },
+  {
+    "id": "ORD-1002",
+    "customer": "Gulf Drilling",
+    "customerId": "U-904",
+    "status": "pending",
+    "total": 312000.00,
+    "currency": "USD",
+    "items": [
+      {"productId": "p4", "qty": 1, "unitPrice": 220000.00},
+      {"productId": "p7", "qty": 1, "unitPrice": 54000.00},
+      {"productId": "p3", "qty": 20, "unitPrice": 450.00}
+    ],
+    "shipping": {"method": "CIF", "port": "Duqm", "eta": "2026-05-05"},
+    "date": "2026-02-05T14:10:00Z",
+    "notes": "Payment terms 30 days after delivery."
+  },
+  {
+    "id": "ORD-1003",
+    "customer": "Desert Energy",
+    "customerId": "U-901",
+    "status": "shipped",
+    "total": 15000.00,
+    "currency": "USD",
+    "items": [
+      {"productId": "p9", "qty": 1, "unitPrice": 15000.00}
+    ],
+    "shipping": {"method": "EXW", "port": "Warehouse B", "eta": "2026-02-20"},
+    "date": "2026-01-20T11:30:00Z",
+    "notes": "Include calibration certificate."
+  },
+  {
+    "id": "ORD-1004",
+    "customer": "ُEnafor",
+    "customerId": "U-900",
+    "status": "delivered",
+    "total": 54000.00,
+    "currency": "USD",
+    "items": [
+      {"productId": "p7", "qty": 1, "unitPrice": 54000.00}
+    ],
+    "shipping": {"method": "Door", "port": "Warehouse A", "eta": "2026-01-28"},
+    "date": "2026-01-25T09:00:00Z",
+    "notes": "Delivered to client site; signed POD available."
+  }
+]

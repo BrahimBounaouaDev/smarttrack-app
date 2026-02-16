@@ -1,0 +1,79 @@
+[
+  {
+    "id": "RFQ-2001",
+    "requesterId": "U-900",
+    "company": "Gulf Drilling",
+    "items": [
+      {"productId": "p1", "qty": 2, "unit": "set"},
+      {"productId": "p5", "qty": 500, "unit": "meter"}
+    ],
+    "status": "open",
+    "preferredDelivery": "2026-03-15",
+    "notes": "Require mill test certificates and API spec. Delivery to Port Sohar.",
+    "attachments": ["assets/mock3/specs/rfq-2001-spec.pdf"],
+    "createdAt": "2026-02-10T08:00:00Z",
+    "responses": []
+  },
+  {
+    "id": "RFQ-2002",
+    "requesterId": "U-901",
+    "company": "Desert Energy",
+    "items": [
+      {"productId": "p3", "qty": 100, "unit": "kit"}
+    ],
+    "status": "quoted",
+    "preferredDelivery": "2026-02-28",
+    "notes": "Need packaging for export and spare parts list.",
+    "attachments": ["assets/mock3/specs/rfq-2002-spec.pdf"],
+    "createdAt": "2026-01-20T11:30:00Z",
+    "responses": [
+      {"vendor": "SmartToil Trading", "price": 42000.00, "currency": "USD", "leadTimeDays": 14, "comment": "Includes export packing"}
+    ]
+  },
+  {
+    "id": "RFQ-2003",
+    "requesterId": "U-902",
+    "company": "Al-Faraj Oil",
+    "items": [
+      {"productId": "p4", "qty": 1, "unit": "set"},
+      {"productId": "p7", "qty": 1, "unit": "set"}
+    ],
+    "status": "open",
+    "preferredDelivery": "2026-04-01",
+    "notes": "BOP stack must be pressure tested and certified.",
+    "attachments": ["assets/mock3/specs/rfq-2003-bop.pdf"],
+    "createdAt": "2026-02-01T09:30:00Z",
+    "responses": []
+  },
+  {
+    "id": "RFQ-2004",
+    "requesterId": "U-900",
+    "company": "SmartToil Trading",
+    "items": [
+      {"productId": "p8", "qty": 40, "unit": "drum"}
+    ],
+    "status": "closed",
+    "preferredDelivery": "2026-02-20",
+    "notes": "Internal procurement for upcoming campaign.",
+    "attachments": ["assets/mock3/specs/rfq-2004-spec.pdf"],
+    "createdAt": "2026-01-05T10:00:00Z",
+    "responses": [
+      {"vendor": "Sigma Chemicals", "price": 12800.00, "currency": "USD", "leadTimeDays": 7, "comment": "Ready stock"}
+    ]
+  },
+  {
+    "id": "RFQ-2005",
+    "requesterId": "U-903",
+    "company": "North Sea Services",
+    "items": [
+      {"productId": "p2", "qty": 1, "unit": "set"},
+      {"productId": "p9", "qty": 2, "unit": "set"}
+    ],
+    "status": "pending",
+    "preferredDelivery": "2026-03-30",
+    "notes": "Confirm paint and coating specifications for offshore use.",
+    "attachments": ["assets/mock3/specs/rfq-2005-spec.pdf"],
+    "createdAt": "2026-02-12T13:45:00Z",
+    "responses": []
+  }
+]

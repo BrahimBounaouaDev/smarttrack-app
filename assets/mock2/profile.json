@@ -1,0 +1,28 @@
+{
+  "id": "U-900",
+  "name": "Ahmed Al-Harthy",
+  "company": {
+    "name": "Al-Faraj Oil",
+    "vat": "OM-123456",
+    "address": "Al Khuwair, Muscat, Oman",
+    "phone": "+968-9XXXXXXX"
+  },
+  "email": "fathi@example.com",
+  "role": "trader",
+  "avatar": "assets/mock/avatar.png",
+  "preferences": {
+    "currency": "USD",
+    "language": "ar",
+    "theme": "dark",
+    "notifications": {"orders": true, "rfq": true, "promotions": false}
+  },
+  "contacts": [
+    {"name": "Saleh Al-Maawali", "position": "Procurement Manager", "email": "saleh@gulfdrilling.om", "phone": "+968-9YYYYYYY"}
+  ],
+  "companyProfile": {
+    "established": 2012,
+    "employees": 45,
+    "regions": ["Oman", "UAE", "KSA","ALG"],
+    "capabilities": ["Supply", "Logistics", "After-sales support"]
+  }
+}

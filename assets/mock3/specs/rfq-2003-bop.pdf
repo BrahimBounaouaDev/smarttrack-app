@@ -1,0 +1,39 @@
+
+## **rfq‑2003‑bop.pdf**
+**Title:** RFQ‑2003 – BOP Stack Technical Specification  
+**Header:**  
+- SMART TRACK  
+- RFQ ID: RFQ‑2003  
+- Date: 01 Feb 2026  
+- Logo included
+
+### 1. Overview  
+Request for BOP Stack (Well Control Equipment).
+
+### 2. Technical Specs  
+- Rated Pressure: **5000 psi**  
+- Stack Type: **Annular + Ram**  
+- Size: **18.75 inch**  
+- Material: Carbon steel (API compliant)
+
+### 3. Testing Requirements  
+- Hydrostatic test @ 1.5× rated pressure  
+- Functional test for all rams  
+- Leak test  
+- NDT (RT/UT/MPI)  
+- FAT/MAT checklist
+
+### 4. FAT/MAT Checklist Table  
+| Item | Test Description | Result |
+|------|------------------|--------|
+| 1 | Hydrostatic test | ___ |
+| 2 | Function test | ___ |
+| 3 | Leak test | ___ |
+| 4 | Documentation | ___ |
+
+### 5. Packaging  
+- Shock‑protected crates  
+- Moisture protection  
+- Handling labels
+
+---
